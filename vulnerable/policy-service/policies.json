@@ -1,0 +1,22 @@
+[
+    {
+        "effect": "deny",
+        "condition": {
+            "resource.classification": "secret",
+            "user.location": "external"
+        }
+    },
+    {
+        "effect": "deny",
+        "condition": {
+            "action": "delete",
+            "user.role": "employee"
+        }
+    },
+    {
+        "effect": "allow",
+        "condition": {
+            "action": "read"
+        }
+    }
+]
