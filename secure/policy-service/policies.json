@@ -1,0 +1,22 @@
+[
+    {
+        "effect": "deny",
+        "condition": {
+            "resource.classification": "secret",
+            "user.role": "employee"
+        }
+    },
+    {
+        "effect": "allow",
+        "condition": {
+            "resource.classification": "public",
+            "user.role": "employee"
+        }
+    },
+    {
+        "effect": "allow",
+        "condition": {
+            "user.role": "admin"
+        }
+    }
+]
